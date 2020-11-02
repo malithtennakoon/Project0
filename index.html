@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <style>
+            #middle{
+                text-align: center;
+            }
+            #searchBar{
+                border: 1px solid rgb(206, 205, 205);
+                width: 500px;
+                height: 35px;
+                border-radius: 30px;
+                margin: 20px;
+            }
+            #searchButtons>input{
+                border:none;
+                height:35px;
+                padding: 10px;
+                color: rgb(104, 103, 103);
+            }
+            .icon {
+                padding: 10px;
+                color: rgb(131, 130, 130);
+                min-width: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="middle">
+            <form action="https://google.com/search">
+                <img src="googlelogo.png" alt="Google"><br>
+                <i class="fa fa-search icon"></i>
+                <input type="text" name="q" id="searchBar">
+                <div id="searchButtons">
+                    <input type="submit" value="Google Search">
+                    <input type="submit" value="I'm Feeling Lucky" href="https://google.com">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
