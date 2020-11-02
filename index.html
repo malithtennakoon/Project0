@@ -2,38 +2,84 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <style>
+            body{
+                position: relative;
+            }
             #middle{
                 text-align: center;
+                transform: translateY(90%);
+            }
+            #searchbox{
+                background: #fff;
+                display: flex;
+                border: 1px solid #dfe1e5;
+                box-shadow: none;
+                border-radius: 24px;
+                height: 44px;
+                margin: auto;
+                width: 582px;
             }
             #searchBar{
-                border: 1px solid rgb(206, 205, 205);
-                width: 500px;
-                height: 35px;
-                border-radius: 30px;
-                margin: 20px;
+                display: flex;
+                flex: 100%;
+                margin-left: 10px;
+            }
+            #input{
+                background-color: transparent;
+                display: flex;
+                flex:100%;
+                border: none;
+                outline: none;
             }
             #searchButtons>input{
+                margin-top: 30px;
                 border:none;
+                border-style: hidden;
                 height:35px;
                 padding: 10px;
                 color: rgb(104, 103, 103);
             }
-            .icon {
-                padding: 10px;
-                color: rgb(131, 130, 130);
-                min-width: 50px;
-                text-align: center;
+            #icon {
+                margin-left:15px;
+                color: #9aa0a6;
+                height: 20px;
+                width: 20px;
+            }
+            #buttons{
+                text-align: right;
+                font-family: arial,sans-serif;
+            }
+            #imageSearchBtn{
+                text-decoration: none;
+                outline: none;
+                padding: 20px;
+            }
+            #advancedSearchBtn{
+                text-decoration: none;
+                outline: none;
+                padding: 20px;
             }
         </style>
     </head>
     <body>
+        <div id="header">
+            <div id="buttons">
+                <a href="img_search.html" id="imageSearchBtn">images</a>
+                <a href="advaced_search.html" id="advancedSearchBtn">advanced search</a>
+            </div>
+        </div>
         <div id="middle">
-            <form action="https://google.com/search">
-                <img src="googlelogo.png" alt="Google"><br>
-                <i class="fa fa-search icon"></i>
-                <input type="text" name="q" id="searchBar">
+            <img src="googlelogo.png" alt="Google"><br>
+            <form action="https://google.com/search" style="margin:auto">
+                <div id="searchbox" >
+                    <div id="seachicon" style="margin: auto;">
+                        <img src="search icon.svg" id="icon">
+                    </div>
+                    <div id="searchBar">
+                        <input type="text" name="q" id="input">
+                    </div>
+                </div>
                 <div id="searchButtons">
                     <input type="submit" value="Google Search">
                     <input type="submit" value="I'm Feeling Lucky" href="https://google.com">
